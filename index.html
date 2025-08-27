@@ -1,450 +1,851 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta Tags -->
-<meta name="description" content="Comprehensive HTML Meta Tags Reference">
-<meta name="keywords" content="Meta, HTML, Element, Helper">
-<meta name="author" content="ArtechFuz3D">
-<meta name="robots" content="index, follow">
-<meta name="googlebot" content="index, follow">
-<link rel="canonical" href="https://yoursite.com/current-page">
+    <meta name="description" content="Comprehensive HTML Meta Tags Reference" />
+    <meta name="keywords" content="Meta, HTML, Element, Helper" />
+    <meta name="author" content="ArtechFuz3D" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://artechfuz3d.github.io/Meta-Tag-Helper/" />
 
     <!-- Open Graph Meta Tags -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="MetaTagHelper - Comprehensive HTML Meta Tags Reference">
-<meta property="og:description" content="Comprehensive HTML Meta Tags Reference">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="MetaTagHelper - Comprehensive HTML Meta Tags Reference"
+    />
+    <meta
+      property="og:description"
+      content="Comprehensive HTML Meta Tags Reference"
+    />
 
-<meta property="og:image" content="https://yoursite.com/image.jpg">
-<meta property="og:image:alt" content="Image description">
-<meta property="og:site_name" content="MetaTagHelper - Comprehensive HTML Meta Tags Reference">
-<meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://artechfuz3d.github.io/Meta-Tag-Helper/htmlhint.png" />
+    <meta property="og:image:alt" content="Image description" />
+    <meta
+      property="og:site_name"
+      content="MetaTagHelper - Comprehensive HTML Meta Tags Reference"
+    />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Your Page Title">
-<meta name="twitter:description" content="Comprehensive HTML Meta Tags Reference">
-<meta name="twitter:image" content="https://yoursite.com/image.jpg">
-<meta name="twitter:image:alt" content="Image description">
-<meta name="twitter:site" content="@yourtwitterhandle">
-<meta name="twitter:creator" content="@yourtwitterhandle">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Your Page Title" />
+    <meta
+      name="twitter:description"
+      content="Comprehensive HTML Meta Tags Reference"
+    />
+    <meta name="twitter:image" content="https://artechfuz3d.github.io/Meta-Tag-Helper/htmlhint.png" />
+    <meta name="twitter:image:alt" content="Image description" />
+    <meta name="twitter:site" content="@yourtwitterhandle" />
+    <meta name="twitter:creator" content="@yourtwitterhandle" />
 
     <!-- Favicon & Icons -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/android-chrome-512x512.png"
+    />
     <title>MetaTagHelper - Comprehensive HTML Meta Tags Reference</title>
-    
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .vscode-icons--file-type-htmlhint {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23e44f26' d='m10.04 18.875l-7.991-4.116v-1.531l7.991-4.117v2.381l-4.988 2.501l4.988 2.5zm7.273.195H15.03l4.543-11.803h2.299zm4.647-.198v-2.38l5.023-2.499l-5.023-2.499V9.113l7.991 4.099v1.562z'/%3E%3Cpath fill='%23c1272d' d='m12.633 24.733l-1.666-1.665L9.3 24.732l-1.678-1.666l-1.675 1.665l-1.673-1.665L3.2 24.134L2 23.347l2.274-2.265l1.673 1.667l1.675-1.665l1.675 1.665l1.67-1.668l1.669 1.666l1.667-1.663l1.679 1.666l1.674-1.668l1.675 1.668l1.68-1.665l1.675 1.665l1.68-1.666l1.673 1.666l1.679-1.664L30 23.344l-1.198.792l-1.084-1.073l-1.683 1.667l-1.671-1.664l-1.679 1.664l-1.676-1.666l-1.681 1.666l-1.672-1.664l-1.673 1.664l-1.677-1.664z'/%3E%3C/svg%3E");
-}
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            color: #333;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            color: white;
-        }
-        
-        .header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-        
-        .meta-section {
-            background: rgba(255, 255, 255, 0.95);
-            margin-bottom: 30px;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        .meta-section h2 {
-            color: #4a5568;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-        }
-        
-        .code-block {
-            background: #1a202c;
-            color: #e2e8f0;
-            padding: 25px;
-            border-radius: 10px;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-            line-height: 1.6;
-            overflow-x: auto;
-            position: relative;
-            border: 1px solid #4a5568;
-            white-space: pre-line;
-        }
-        
-        .code-block code {
-            display: block;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-        
-        .copy-btn {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 12px;
-            transition: all 0.3s ease;
-        }
-        
-        .copy-btn:hover {
-            background: #5a67d8;
-            transform: translateY(-2px);
-        }
-        
-        .copy-btn:active {
-            transform: translateY(0);
-        }
-        
-        .description {
-            margin-bottom: 15px;
-            color: #4a5568;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        
-        .tag-comment {
-            color: #68d391;
-            font-style: italic;
-        }
-        
-        .tag-attribute {
-            color: #fbb6ce;
-        }
-        
-        .tag-value {
-            color: #ffd89b;
-        }
-        
-        .tag-name {
-            color: #81e6d9;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            color: white;
-            opacity: 0.8;
-        }
-        
-        .warning {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 20px;
-            color: #856404;
-        }
-        
-        .tip {
-            background: #d1ecf1;
-            border: 1px solid #bee5eb;
-            border-radius: 8px;
-            padding: 15px;
-            margin-top: 15px;
-            color: #0c5460;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .vscode-icons--file-type-htmlhint {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23e44f26' d='m10.04 18.875l-7.991-4.116v-1.531l7.991-4.117v2.381l-4.988 2.501l4.988 2.5zm7.273.195H15.03l4.543-11.803h2.299zm4.647-.198v-2.38l5.023-2.499l-5.023-2.499V9.113l7.991 4.099v1.562z'/%3E%3Cpath fill='%23c1272d' d='m12.633 24.733l-1.666-1.665L9.3 24.732l-1.678-1.666l-1.675 1.665l-1.673-1.665L3.2 24.134L2 23.347l2.274-2.265l1.673 1.667l1.675-1.665l1.675 1.665l1.67-1.668l1.669 1.666l1.667-1.663l1.679 1.666l1.674-1.668l1.675 1.668l1.68-1.665l1.675 1.665l1.68-1.666l1.673 1.666l1.679-1.664L30 23.344l-1.198.792l-1.084-1.073l-1.683 1.667l-1.671-1.664l-1.679 1.664l-1.676-1.666l-1.681 1.666l-1.672-1.664l-1.673 1.664l-1.677-1.664z'/%3E%3C/svg%3E");
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+        color: white;
+      }
+
+      .header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .header p {
+        font-size: 1.2em;
+        opacity: 0.9;
+      }
+
+      .meta-section {
+        background: rgba(255, 255, 255, 0.95);
+        margin-bottom: 30px;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .meta-section h2 {
+        color: #4a5568;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        border-bottom: 3px solid #667eea;
+        padding-bottom: 10px;
+      }
+
+      .code-block {
+        background: #1a202c;
+        color: #e2e8f0;
+        padding: 25px;
+        border-radius: 10px;
+        font-family: "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.6;
+        overflow-x: auto;
+        position: relative;
+        border: 1px solid #4a5568;
+        white-space: pre-line;
+      }
+
+      .code-block code {
+        display: block;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      .copy-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: #667eea;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+        transition: all 0.3s ease;
+      }
+
+      .copy-btn:hover {
+        background: #5a67d8;
+        transform: translateY(-2px);
+      }
+
+      .copy-btn:active {
+        transform: translateY(0);
+      }
+
+      .description {
+        margin-bottom: 15px;
+        color: #4a5568;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .tag-comment {
+        color: #68d391;
+        font-style: italic;
+      }
+
+      .tag-attribute {
+        color: #fbb6ce;
+      }
+
+      .tag-value {
+        color: #ffd89b;
+      }
+
+      .tag-name {
+        color: #81e6d9;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px;
+        color: white;
+        opacity: 0.8;
+      }
+
+      .warning {
+        background: #fff3cd;
+        border: 1px solid #ffeaa7;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+        color: #856404;
+      }
+
+      .tip {
+        background: #d1ecf1;
+        border: 1px solid #bee5eb;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 15px;
+        color: #0c5460;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <h1>MetaTagHelper</h1>
-            <p>Your comprehensive HTML meta tags reference and copy-paste toolkit</p>
-        </header>
+      <header class="header">
+        <h1>MetaTagHelper</h1>
+        <p>
+          Your comprehensive HTML meta tags reference and copy-paste toolkit
+        </p>
+      </header>
 
-        <div class="meta-section">
-            <h2>Essential Meta Tags</h2>
-            <p class="description">The fundamental meta tags every website should have. These are required for proper rendering and SEO.</p>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<span class="tag-comment">&lt;!-- Essential Meta Tags --&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">charset=</span><span class="tag-value">"UTF-8"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"viewport"</span> <span class="tag-attribute">content=</span><span class="tag-value">"width=device-width, initial-scale=1.0"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"X-UA-Compatible"</span> <span class="tag-attribute">content=</span><span class="tag-value">"IE=edge"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;title&gt;</span>Your Page Title<span class="tag-name">&lt;/title&gt;</span>
-            </div>
+      <div class="meta-section">
+        <h2>Essential Meta Tags</h2>
+        <p class="description">
+          The fundamental meta tags every website should have. These are
+          required for proper rendering and SEO.
+        </p>
+        <div class="code-block">
+          <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+          <span class="tag-comment">&lt;!-- Essential Meta Tags --&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">charset=</span
+          ><span class="tag-value">"UTF-8"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"viewport"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"width=device-width, initial-scale=1.0"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">http-equiv=</span
+          ><span class="tag-value">"X-UA-Compatible"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"IE=edge"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;title&gt;</span>Your Page Title<span
+            class="tag-name"
+            >&lt;/title&gt;</span
+          >
         </div>
+      </div>
 
-        <div class="meta-section">
-            <h2>SEO Meta Tags</h2>
-            <p class="description">Meta tags specifically for search engine optimization and better search results appearance.</p>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<span class="tag-comment">&lt;!-- SEO Meta Tags --&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"description"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your page description here (150-160 characters)"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"keywords"</span> <span class="tag-attribute">content=</span><span class="tag-value">"keyword1, keyword2, keyword3"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"author"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Name"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"robots"</span> <span class="tag-attribute">content=</span><span class="tag-value">"index, follow"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"googlebot"</span> <span class="tag-attribute">content=</span><span class="tag-value">"index, follow"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"canonical"</span> <span class="tag-attribute">href=</span><span class="tag-value">"https://yoursite.com/current-page"</span><span class="tag-name">&gt;</span>
-            </div>
+      <div class="meta-section">
+        <h2>SEO Meta Tags</h2>
+        <p class="description">
+          Meta tags specifically for search engine optimization and better
+          search results appearance.
+        </p>
+        <div class="code-block">
+          <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+          <span class="tag-comment">&lt;!-- SEO Meta Tags --&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"description"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value"
+            >"Your page description here (150-160 characters)"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"keywords"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"keyword1, keyword2, keyword3"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"author"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your Name"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"robots"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"index, follow"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"googlebot"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"index, follow"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;link</span>
+          <span class="tag-attribute">rel=</span
+          ><span class="tag-value">"canonical"</span>
+          <span class="tag-attribute">href=</span
+          ><span class="tag-value">"https://yoursite.com/current-page"</span
+          ><span class="tag-name">&gt;</span>
         </div>
+      </div>
 
-        <div class="meta-section">
-            <h2>Open Graph (Facebook) Meta Tags</h2>
-            <p class="description">Meta tags for better social media sharing on Facebook, LinkedIn, and other platforms that support Open Graph.</p>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<span class="tag-comment">&lt;!-- Open Graph Meta Tags --&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:type"</span> <span class="tag-attribute">content=</span><span class="tag-value">"website"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:title"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Page Title"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:description"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your page description"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:url"</span> <span class="tag-attribute">content=</span><span class="tag-value">"https://yoursite.com/current-page"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:image"</span> <span class="tag-attribute">content=</span><span class="tag-value">"https://yoursite.com/image.jpg"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:image:alt"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Image description"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:site_name"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Site Name"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:locale"</span> <span class="tag-attribute">content=</span><span class="tag-value">"en_US"</span><span class="tag-name">&gt;</span>
-            </div>
+      <div class="meta-section">
+        <h2>Open Graph (Facebook) Meta Tags</h2>
+        <p class="description">
+          Meta tags for better social media sharing on Facebook, LinkedIn, and
+          other platforms that support Open Graph.
+        </p>
+        <div class="code-block">
+          <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+          <span class="tag-comment">&lt;!-- Open Graph Meta Tags --&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:type"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"website"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:title"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your Page Title"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:description"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your page description"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:url"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"https://yoursite.com/current-page"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:image"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"https://yoursite.com/image.jpg"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:image:alt"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Image description"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:site_name"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your Site Name"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:locale"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"en_US"</span
+          ><span class="tag-name">&gt;</span>
         </div>
+      </div>
 
-        <div class="meta-section">
-            <h2>Twitter Card Meta Tags</h2>
-            <p class="description">Meta tags specifically for Twitter card previews when your content is shared on Twitter.</p>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<span class="tag-comment">&lt;!-- Twitter Card Meta Tags --&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:card"</span> <span class="tag-attribute">content=</span><span class="tag-value">"summary_large_image"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:title"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Page Title"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:description"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your page description"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:image"</span> <span class="tag-attribute">content=</span><span class="tag-value">"https://yoursite.com/image.jpg"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:image:alt"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Image description"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:site"</span> <span class="tag-attribute">content=</span><span class="tag-value">"@yourtwitterhandle"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:creator"</span> <span class="tag-attribute">content=</span><span class="tag-value">"@yourtwitterhandle"</span><span class="tag-name">&gt;</span>
-            </div>
+      <div class="meta-section">
+        <h2>Twitter Card Meta Tags</h2>
+        <p class="description">
+          Meta tags specifically for Twitter card previews when your content is
+          shared on Twitter.
+        </p>
+        <div class="code-block">
+          <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+          <span class="tag-comment">&lt;!-- Twitter Card Meta Tags --&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:card"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"summary_large_image"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:title"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your Page Title"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:description"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your page description"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:image"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"https://yoursite.com/image.jpg"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:image:alt"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Image description"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:site"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"@yourtwitterhandle"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:creator"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"@yourtwitterhandle"</span
+          ><span class="tag-name">&gt;</span>
         </div>
+      </div>
 
-        <div class="meta-section">
-            <h2>Security & Performance Meta Tags</h2>
-            <p class="description">Meta tags for enhanced security, performance, and browser behavior control.</p>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<span class="tag-comment">&lt;!-- Security & Performance Meta Tags --&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"Content-Security-Policy"</span> <span class="tag-attribute">content=</span><span class="tag-value">"default-src 'self'"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"Strict-Transport-Security"</span> <span class="tag-attribute">content=</span><span class="tag-value">"max-age=31536000; includeSubDomains"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"X-Content-Type-Options"</span> <span class="tag-attribute">content=</span><span class="tag-value">"nosniff"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"X-Frame-Options"</span> <span class="tag-attribute">content=</span><span class="tag-value">"DENY"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"X-XSS-Protection"</span> <span class="tag-attribute">content=</span><span class="tag-value">"1; mode=block"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"Referrer-Policy"</span> <span class="tag-attribute">content=</span><span class="tag-value">"strict-origin-when-cross-origin"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"format-detection"</span> <span class="tag-attribute">content=</span><span class="tag-value">"telephone=no"</span><span class="tag-name">&gt;</span>
-            </div>
-            <div class="warning">
-                <strong>Warning:</strong> The Content-Security-Policy should be customized based on your site's requirements. The example above is very restrictive.
-            </div>
+      <div class="meta-section">
+        <h2>Security & Performance Meta Tags</h2>
+        <p class="description">
+          Meta tags for enhanced security, performance, and browser behavior
+          control.
+        </p>
+        <div class="code-block">
+          <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+          <span class="tag-comment"
+            >&lt;!-- Security & Performance Meta Tags --&gt;</span
+          >
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">http-equiv=</span
+          ><span class="tag-value">"Content-Security-Policy"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"default-src 'self'"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">http-equiv=</span
+          ><span class="tag-value">"Strict-Transport-Security"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"max-age=31536000; includeSubDomains"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">http-equiv=</span
+          ><span class="tag-value">"X-Content-Type-Options"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"nosniff"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">http-equiv=</span
+          ><span class="tag-value">"X-Frame-Options"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"DENY"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">http-equiv=</span
+          ><span class="tag-value">"X-XSS-Protection"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"1; mode=block"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">http-equiv=</span
+          ><span class="tag-value">"Referrer-Policy"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"strict-origin-when-cross-origin"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"format-detection"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"telephone=no"</span
+          ><span class="tag-name">&gt;</span>
         </div>
+        <div class="warning">
+          <strong>Warning:</strong> The Content-Security-Policy should be
+          customized based on your site's requirements. The example above is
+          very restrictive.
+        </div>
+      </div>
 
-        <div class="meta-section">
-            <h2>Mobile & PWA Meta Tags</h2>
-            <p class="description">Meta tags for Progressive Web Apps, mobile optimization, and native app-like behavior.</p>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<span class="tag-comment">&lt;!-- Mobile & PWA Meta Tags --&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"theme-color"</span> <span class="tag-attribute">content=</span><span class="tag-value">"#667eea"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"msapplication-TileColor"</span> <span class="tag-attribute">content=</span><span class="tag-value">"#667eea"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"apple-mobile-web-app-capable"</span> <span class="tag-attribute">content=</span><span class="tag-value">"yes"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"apple-mobile-web-app-status-bar-style"</span> <span class="tag-attribute">content=</span><span class="tag-value">"black-translucent"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"apple-mobile-web-app-title"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your App Name"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"mobile-web-app-capable"</span> <span class="tag-attribute">content=</span><span class="tag-value">"yes"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"manifest"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/manifest.json"</span><span class="tag-name">&gt;</span>
-            </div>
+      <div class="meta-section">
+        <h2>Mobile & PWA Meta Tags</h2>
+        <p class="description">
+          Meta tags for Progressive Web Apps, mobile optimization, and native
+          app-like behavior.
+        </p>
+        <div class="code-block">
+          <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+          <span class="tag-comment">&lt;!-- Mobile & PWA Meta Tags --&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"theme-color"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"#667eea"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"msapplication-TileColor"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"#667eea"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"apple-mobile-web-app-capable"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"yes"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value"
+            >"apple-mobile-web-app-status-bar-style"</span
+          >
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"black-translucent"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"apple-mobile-web-app-title"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your App Name"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"mobile-web-app-capable"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"yes"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;link</span>
+          <span class="tag-attribute">rel=</span
+          ><span class="tag-value">"manifest"</span>
+          <span class="tag-attribute">href=</span
+          ><span class="tag-value">"/manifest.json"</span
+          ><span class="tag-name">&gt;</span>
         </div>
+      </div>
 
-        <div class="meta-section">
-            <h2>Favicon & Icons</h2>
-            <p class="description">Various icon links for different devices and browsers. Generate icons using a favicon generator for best results.</p>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<span class="tag-comment">&lt;!-- Favicon & Icons --&gt;</span>
-<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"icon"</span> <span class="tag-attribute">type=</span><span class="tag-value">"image/x-icon"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/favicon.ico"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"icon"</span> <span class="tag-attribute">type=</span><span class="tag-value">"image/png"</span> <span class="tag-attribute">sizes=</span><span class="tag-value">"16x16"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/favicon-16x16.png"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"icon"</span> <span class="tag-attribute">type=</span><span class="tag-value">"image/png"</span> <span class="tag-attribute">sizes=</span><span class="tag-value">"32x32"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/favicon-32x32.png"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"apple-touch-icon"</span> <span class="tag-attribute">sizes=</span><span class="tag-value">"180x180"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/apple-touch-icon.png"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"icon"</span> <span class="tag-attribute">type=</span><span class="tag-value">"image/png"</span> <span class="tag-attribute">sizes=</span><span class="tag-value">"192x192"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/android-chrome-192x192.png"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"icon"</span> <span class="tag-attribute">type=</span><span class="tag-value">"image/png"</span> <span class="tag-attribute">sizes=</span><span class="tag-value">"512x512"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/android-chrome-512x512.png"</span><span class="tag-name">&gt;</span>
-            </div>
+      <div class="meta-section">
+        <h2>Favicon & Icons</h2>
+        <p class="description">
+          Various icon links for different devices and browsers. Generate icons
+          using a favicon generator for best results.
+        </p>
+        <div class="code-block">
+          <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+          <span class="tag-comment">&lt;!-- Favicon & Icons --&gt;</span>
+          <span class="tag-name">&lt;link</span>
+          <span class="tag-attribute">rel=</span
+          ><span class="tag-value">"icon"</span>
+          <span class="tag-attribute">type=</span
+          ><span class="tag-value">"image/x-icon"</span>
+          <span class="tag-attribute">href=</span
+          ><span class="tag-value">"/favicon.ico"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;link</span>
+          <span class="tag-attribute">rel=</span
+          ><span class="tag-value">"icon"</span>
+          <span class="tag-attribute">type=</span
+          ><span class="tag-value">"image/png"</span>
+          <span class="tag-attribute">sizes=</span
+          ><span class="tag-value">"16x16"</span>
+          <span class="tag-attribute">href=</span
+          ><span class="tag-value">"/favicon-16x16.png"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;link</span>
+          <span class="tag-attribute">rel=</span
+          ><span class="tag-value">"icon"</span>
+          <span class="tag-attribute">type=</span
+          ><span class="tag-value">"image/png"</span>
+          <span class="tag-attribute">sizes=</span
+          ><span class="tag-value">"32x32"</span>
+          <span class="tag-attribute">href=</span
+          ><span class="tag-value">"/favicon-32x32.png"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;link</span>
+          <span class="tag-attribute">rel=</span
+          ><span class="tag-value">"apple-touch-icon"</span>
+          <span class="tag-attribute">sizes=</span
+          ><span class="tag-value">"180x180"</span>
+          <span class="tag-attribute">href=</span
+          ><span class="tag-value">"/apple-touch-icon.png"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;link</span>
+          <span class="tag-attribute">rel=</span
+          ><span class="tag-value">"icon"</span>
+          <span class="tag-attribute">type=</span
+          ><span class="tag-value">"image/png"</span>
+          <span class="tag-attribute">sizes=</span
+          ><span class="tag-value">"192x192"</span>
+          <span class="tag-attribute">href=</span
+          ><span class="tag-value">"/android-chrome-192x192.png"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;link</span>
+          <span class="tag-attribute">rel=</span
+          ><span class="tag-value">"icon"</span>
+          <span class="tag-attribute">type=</span
+          ><span class="tag-value">"image/png"</span>
+          <span class="tag-attribute">sizes=</span
+          ><span class="tag-value">"512x512"</span>
+          <span class="tag-attribute">href=</span
+          ><span class="tag-value">"/android-chrome-512x512.png"</span
+          ><span class="tag-name">&gt;</span>
         </div>
+      </div>
 
-        <div class="meta-section">
-            <h2>Complete Example Template</h2>
-            <p class="description">A comprehensive template combining all essential meta tags for a modern website.</p>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<span class="tag-name">&lt;!DOCTYPE html&gt;</span>
-<span class="tag-name">&lt;html</span> <span class="tag-attribute">lang=</span><span class="tag-value">"en"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;head&gt;</span>
-    <span class="tag-comment">&lt;!-- Essential Meta Tags --&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">charset=</span><span class="tag-value">"UTF-8"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"viewport"</span> <span class="tag-attribute">content=</span><span class="tag-value">"width=device-width, initial-scale=1.0"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"X-UA-Compatible"</span> <span class="tag-attribute">content=</span><span class="tag-value">"IE=edge"</span><span class="tag-name">&gt;</span>
-    
-    <span class="tag-comment">&lt;!-- SEO Meta Tags --&gt;</span>
-    <span class="tag-name">&lt;title&gt;</span>Your Page Title<span class="tag-name">&lt;/title&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"description"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your page description here"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"keywords"</span> <span class="tag-attribute">content=</span><span class="tag-value">"keyword1, keyword2, keyword3"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"author"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Name"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"robots"</span> <span class="tag-attribute">content=</span><span class="tag-value">"index, follow"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"canonical"</span> <span class="tag-attribute">href=</span><span class="tag-value">"https://yoursite.com/current-page"</span><span class="tag-name">&gt;</span>
-    
-    <span class="tag-comment">&lt;!-- Open Graph Meta Tags --&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:type"</span> <span class="tag-attribute">content=</span><span class="tag-value">"website"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:title"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Page Title"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:description"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your page description"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:url"</span> <span class="tag-attribute">content=</span><span class="tag-value">"https://yoursite.com/current-page"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:image"</span> <span class="tag-attribute">content=</span><span class="tag-value">"https://yoursite.com/image.jpg"</span><span class="tag-name">&gt;</span>
-    
-    <span class="tag-comment">&lt;!-- Twitter Card Meta Tags --&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:card"</span> <span class="tag-attribute">content=</span><span class="tag-value">"summary_large_image"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:title"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Page Title"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:description"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your page description"</span><span class="tag-name">&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:image"</span> <span class="tag-attribute">content=</span><span class="tag-value">"https://yoursite.com/image.jpg"</span><span class="tag-name">&gt;</span>
-    
-    <span class="tag-comment">&lt;!-- Favicon --&gt;</span>
-    <span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"icon"</span> <span class="tag-attribute">type=</span><span class="tag-value">"image/x-icon"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/favicon.ico"</span><span class="tag-name">&gt;</span>
-    
-    <span class="tag-comment">&lt;!-- Theme Color --&gt;</span>
-    <span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"theme-color"</span> <span class="tag-attribute">content=</span><span class="tag-value">"#667eea"</span><span class="tag-name">&gt;</span>
-<span class="tag-name">&lt;/head&gt;</span>
-            </div>
-            <div class="tip">
-                <strong>Tip:</strong> Remember to replace placeholder values with your actual content, URLs, and image paths. Test your meta tags using tools like Facebook's Sharing Debugger and Twitter's Card Validator.
-            </div>
+      <div class="meta-section">
+        <h2>Complete Example Template</h2>
+        <p class="description">
+          A comprehensive template combining all essential meta tags for a
+          modern website.
+        </p>
+        <div class="code-block">
+          <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+          <span class="tag-name">&lt;!DOCTYPE html&gt;</span>
+          <span class="tag-name">&lt;html</span>
+          <span class="tag-attribute">lang=</span
+          ><span class="tag-value">"en"</span><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;head&gt;</span>
+          <span class="tag-comment">&lt;!-- Essential Meta Tags --&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">charset=</span
+          ><span class="tag-value">"UTF-8"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"viewport"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"width=device-width, initial-scale=1.0"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">http-equiv=</span
+          ><span class="tag-value">"X-UA-Compatible"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"IE=edge"</span
+          ><span class="tag-name">&gt;</span>
+
+          <span class="tag-comment">&lt;!-- SEO Meta Tags --&gt;</span>
+          <span class="tag-name">&lt;title&gt;</span>Your Page Title<span
+            class="tag-name"
+            >&lt;/title&gt;</span
+          >
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"description"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your page description here"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"keywords"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"keyword1, keyword2, keyword3"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"author"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your Name"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"robots"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"index, follow"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;link</span>
+          <span class="tag-attribute">rel=</span
+          ><span class="tag-value">"canonical"</span>
+          <span class="tag-attribute">href=</span
+          ><span class="tag-value">"https://yoursite.com/current-page"</span
+          ><span class="tag-name">&gt;</span>
+
+          <span class="tag-comment">&lt;!-- Open Graph Meta Tags --&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:type"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"website"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:title"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your Page Title"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:description"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your page description"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:url"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"https://yoursite.com/current-page"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">property=</span
+          ><span class="tag-value">"og:image"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"https://yoursite.com/image.jpg"</span
+          ><span class="tag-name">&gt;</span>
+
+          <span class="tag-comment">&lt;!-- Twitter Card Meta Tags --&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:card"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"summary_large_image"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:title"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your Page Title"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:description"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"Your page description"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"twitter:image"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"https://yoursite.com/image.jpg"</span
+          ><span class="tag-name">&gt;</span>
+
+          <span class="tag-comment">&lt;!-- Favicon --&gt;</span>
+          <span class="tag-name">&lt;link</span>
+          <span class="tag-attribute">rel=</span
+          ><span class="tag-value">"icon"</span>
+          <span class="tag-attribute">type=</span
+          ><span class="tag-value">"image/x-icon"</span>
+          <span class="tag-attribute">href=</span
+          ><span class="tag-value">"/favicon.ico"</span
+          ><span class="tag-name">&gt;</span>
+
+          <span class="tag-comment">&lt;!-- Theme Color --&gt;</span>
+          <span class="tag-name">&lt;meta</span>
+          <span class="tag-attribute">name=</span
+          ><span class="tag-value">"theme-color"</span>
+          <span class="tag-attribute">content=</span
+          ><span class="tag-value">"#667eea"</span
+          ><span class="tag-name">&gt;</span>
+          <span class="tag-name">&lt;/head&gt;</span>
         </div>
+        <div class="tip">
+          <strong>Tip:</strong> Remember to replace placeholder values with your
+          actual content, URLs, and image paths. Test your meta tags using tools
+          like Facebook's Sharing Debugger and Twitter's Card Validator.
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
-        <p>Made by <strong>ArtechFuz3d</strong> | MetaTagHelper - Your HTML meta tags reference</p>
+      <p>
+        Made by <strong>ArtechFuz3d</strong> | MetaTagHelper - Your HTML meta
+        tags reference
+      </p>
     </footer>
 
     <script>
-        function copyToClipboard(button) {
-            const codeBlock = button.parentElement;
-            const code = codeBlock.textContent.replace('Copy', '').trim();
-            
-            // Create a temporary textarea to hold the code
-            const textarea = document.createElement('textarea');
-            textarea.value = code;
-            document.body.appendChild(textarea);
-            
-            // Select and copy the text
-            textarea.select();
-            textarea.setSelectionRange(0, 99999); // For mobile devices
-            
-            try {
-                document.execCommand('copy');
-                button.textContent = 'Copied!';
-                button.style.background = '#48bb78';
-                
-                setTimeout(() => {
-                    button.textContent = 'Copy';
-                    button.style.background = '#667eea';
-                }, 2000);
-            } catch (err) {
-                console.error('Failed to copy text: ', err);
-                button.textContent = 'Error';
-                button.style.background = '#e53e3e';
-                
-                setTimeout(() => {
-                    button.textContent = 'Copy';
-                    button.style.background = '#667eea';
-                }, 2000);
-            }
-            
-            // Remove the temporary textarea
-            document.body.removeChild(textarea);
+      function copyToClipboard(button) {
+        const codeBlock = button.parentElement;
+        const code = codeBlock.textContent.replace("Copy", "").trim();
+
+        // Create a temporary textarea to hold the code
+        const textarea = document.createElement("textarea");
+        textarea.value = code;
+        document.body.appendChild(textarea);
+
+        // Select and copy the text
+        textarea.select();
+        textarea.setSelectionRange(0, 99999); // For mobile devices
+
+        try {
+          document.execCommand("copy");
+          button.textContent = "Copied!";
+          button.style.background = "#48bb78";
+
+          setTimeout(() => {
+            button.textContent = "Copy";
+            button.style.background = "#667eea";
+          }, 2000);
+        } catch (err) {
+          console.error("Failed to copy text: ", err);
+          button.textContent = "Error";
+          button.style.background = "#e53e3e";
+
+          setTimeout(() => {
+            button.textContent = "Copy";
+            button.style.background = "#667eea";
+          }, 2000);
         }
 
-        // Add smooth scrolling to anchor links if any exist
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        // Remove the temporary textarea
+        document.body.removeChild(textarea);
+      }
+
+      // Add smooth scrolling to anchor links if any exist
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
         });
+      });
 
-        // Add some interactivity - animate sections on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+      // Add some interactivity - animate sections on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all meta sections
-        document.querySelectorAll('.meta-section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
         });
+      }, observerOptions);
 
-        // Show initial sections immediately
-        setTimeout(() => {
-            const firstSections = document.querySelectorAll('.meta-section');
-            if (firstSections.length > 0) {
-                firstSections[0].style.opacity = '1';
-                firstSections[0].style.transform = 'translateY(0)';
-            }
-        }, 100);
+      // Observe all meta sections
+      document.querySelectorAll(".meta-section").forEach((section) => {
+        section.style.opacity = "0";
+        section.style.transform = "translateY(20px)";
+        section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(section);
+      });
+
+      // Show initial sections immediately
+      setTimeout(() => {
+        const firstSections = document.querySelectorAll(".meta-section");
+        if (firstSections.length > 0) {
+          firstSections[0].style.opacity = "1";
+          firstSections[0].style.transform = "translateY(0)";
+        }
+      }, 100);
     </script>
-</body>
+  </body>
 </html>
