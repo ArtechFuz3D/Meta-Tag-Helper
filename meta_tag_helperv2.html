@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaTagHelper - Modern HTML Meta Tags Reference</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .meta-section {
+            background: rgba(255, 255, 255, 0.95);
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .meta-section h2 {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .code-block {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 25px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.8;
+            overflow-x: auto;
+            position: relative;
+            border: 1px solid #4a5568;
+            white-space: pre-line;
+        }
+        
+        .code-block code {
+            display: block;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .copy-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .copy-btn:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        
+        .copy-btn:active {
+            transform: translateY(0);
+        }
+        
+        .description {
+            margin-bottom: 15px;
+            color: #4a5568;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .tag-comment {
+            color: #68d391;
+            font-style: italic;
+        }
+        
+        .tag-attribute {
+            color: #fbb6ce;
+        }
+        
+        .tag-value {
+            color: #ffd89b;
+        }
+        
+        .tag-name {
+            color: #81e6d9;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: white;
+            opacity: 0.8;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            color: #856404;
+        }
+        
+        .tip {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            color: #0c5460;
+        }
+
+        .file-section {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .file-title {
+            font-weight: bold;
+            color: #495057;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>MetaTagHelper</h1>
+            <p>Modern HTML meta tags reference with current best practices</p>
+        </header>
+
+        <div class="meta-section">
+            <h2>Essential Core Meta Tags</h2>
+            <p class="description">The absolute minimum meta tags every modern website should have. These are non-negotiable.</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button><span class="tag-comment">&lt;!-- Essential Core Meta Tags --&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">charset=</span><span class="tag-value">"UTF-8"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"viewport"</span> <span class="tag-attribute">content=</span><span class="tag-value">"width=device-width, initial-scale=1.0"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;title&gt;</span>Your Page Title (50-60 chars)<span class="tag-name">&lt;/title&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"description"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Compelling description of your page content (150-160 characters max)"</span><span class="tag-name">&gt;</span>
+            </div>
+        </div>
+
+        <div class="meta-section">
+            <h2>Modern SEO Meta Tags</h2>
+            <p class="description">Current best practices for search engine optimization. Keywords meta tag is mostly obsolete but included for legacy support.</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button><span class="tag-comment">&lt;!-- Modern SEO Meta Tags --&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"robots"</span> <span class="tag-attribute">content=</span><span class="tag-value">"index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"googlebot"</span> <span class="tag-attribute">content=</span><span class="tag-value">"index, follow"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"author"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Name or Company"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"generator"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your CMS or Framework"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"canonical"</span> <span class="tag-attribute">href=</span><span class="tag-value">"https://example.com/current-page"</span><span class="tag-name">&gt;</span>
+
+<span class="tag-comment">&lt;!-- Language and Locale --&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"language"</span> <span class="tag-attribute">content=</span><span class="tag-value">"English"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"alternate"</span> <span class="tag-attribute">hreflang=</span><span class="tag-value">"en"</span> <span class="tag-attribute">href=</span><span class="tag-value">"https://example.com/en/"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"alternate"</span> <span class="tag-attribute">hreflang=</span><span class="tag-value">"x-default"</span> <span class="tag-attribute">href=</span><span class="tag-value">"https://example.com/"</span><span class="tag-name">&gt;</span>
+            </div>
+        </div>
+
+        <div class="meta-section">
+            <h2>Open Graph (OG) Meta Tags</h2>
+            <p class="description">Essential for social media sharing on Facebook, LinkedIn, WhatsApp, and most social platforms.</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button><span class="tag-comment">&lt;!-- Open Graph Meta Tags --&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:type"</span> <span class="tag-attribute">content=</span><span class="tag-value">"website"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:site_name"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Site Name"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:title"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Page Title"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:description"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your page description"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:url"</span> <span class="tag-attribute">content=</span><span class="tag-value">"https://example.com/current-page"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:image"</span> <span class="tag-attribute">content=</span><span class="tag-value">"https://example.com/og-image.jpg"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:image:secure_url"</span> <span class="tag-attribute">content=</span><span class="tag-value">"https://example.com/og-image.jpg"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:image:width"</span> <span class="tag-attribute">content=</span><span class="tag-value">"1200"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:image:height"</span> <span class="tag-attribute">content=</span><span class="tag-value">"630"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:image:alt"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Descriptive text about the image"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">property=</span><span class="tag-value">"og:locale"</span> <span class="tag-attribute">content=</span><span class="tag-value">"en_US"</span><span class="tag-name">&gt;</span>
+            </div>
+            <div class="tip">
+                <strong>Tip:</strong> OG images should be 1200x630px for optimal display across all platforms.
+            </div>
+        </div>
+
+        <div class="meta-section">
+            <h2>Twitter Card Meta Tags</h2>
+            <p class="description">Optimized for Twitter sharing with improved card types and better engagement.</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button><span class="tag-comment">&lt;!-- Twitter Card Meta Tags --&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:card"</span> <span class="tag-attribute">content=</span><span class="tag-value">"summary_large_image"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:site"</span> <span class="tag-attribute">content=</span><span class="tag-value">"@yoursitehandle"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:creator"</span> <span class="tag-attribute">content=</span><span class="tag-value">"@yourcreatorhandle"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:title"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your Page Title"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:description"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your page description"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:image"</span> <span class="tag-attribute">content=</span><span class="tag-value">"https://example.com/twitter-image.jpg"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"twitter:image:alt"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Descriptive text about the image"</span><span class="tag-name">&gt;</span>
+            </div>
+        </div>
+
+        <div class="meta-section">
+            <h2>Modern Security Headers</h2>
+            <p class="description">Current security best practices. These should ideally be set at the server level, but can be added to HTML as fallback.</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button><span class="tag-comment">&lt;!-- Security Headers (Better implemented server-side) --&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"X-Content-Type-Options"</span> <span class="tag-attribute">content=</span><span class="tag-value">"nosniff"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"X-Frame-Options"</span> <span class="tag-attribute">content=</span><span class="tag-value">"DENY"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"Referrer-Policy"</span> <span class="tag-attribute">content=</span><span class="tag-value">"strict-origin-when-cross-origin"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">http-equiv=</span><span class="tag-value">"Permissions-Policy"</span> <span class="tag-attribute">content=</span><span class="tag-value">"geolocation=(), microphone=(), camera=()"</span><span class="tag-name">&gt;</span>
+
+<span class="tag-comment">&lt;!-- DNS Prefetching --&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"dns-prefetch"</span> <span class="tag-attribute">href=</span><span class="tag-value">"//fonts.googleapis.com"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"dns-prefetch"</span> <span class="tag-attribute">href=</span><span class="tag-value">"//www.google-analytics.com"</span><span class="tag-name">&gt;</span>
+            </div>
+            <div class="warning">
+                <strong>Note:</strong> These security headers are much more effective when implemented at the server level (Apache, Nginx, etc.) rather than in HTML meta tags.
+            </div>
+        </div>
+
+        <div class="meta-section">
+            <h2>Progressive Web App (PWA) Meta Tags</h2>
+            <p class="description">Modern approach for PWA implementation with proper manifest usage instead of individual icon meta tags.</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button><span class="tag-comment">&lt;!-- PWA Meta Tags --&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"theme-color"</span> <span class="tag-attribute">content=</span><span class="tag-value">"#667eea"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"color-scheme"</span> <span class="tag-attribute">content=</span><span class="tag-value">"light dark"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"mobile-web-app-capable"</span> <span class="tag-attribute">content=</span><span class="tag-value">"yes"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"apple-mobile-web-app-capable"</span> <span class="tag-attribute">content=</span><span class="tag-value">"yes"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"apple-mobile-web-app-status-bar-style"</span> <span class="tag-attribute">content=</span><span class="tag-value">"black-translucent"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"apple-mobile-web-app-title"</span> <span class="tag-attribute">content=</span><span class="tag-value">"Your App Name"</span><span class="tag-name">&gt;</span>
+
+<span class="tag-comment">&lt;!-- Manifest Link (This is where icons should be defined) --&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"manifest"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/manifest.json"</span><span class="tag-name">&gt;</span>
+
+<span class="tag-comment">&lt;!-- Only essential favicons in HTML --&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"icon"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/favicon.ico"</span> <span class="tag-attribute">sizes=</span><span class="tag-value">"any"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"icon"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/favicon.svg"</span> <span class="tag-attribute">type=</span><span class="tag-value">"image/svg+xml"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"apple-touch-icon"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/apple-touch-icon.png"</span><span class="tag-name">&gt;</span>
+            </div>
+
+            <div class="file-section">
+                <div class="file-title">📄 manifest.json (Place in root directory)</div>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>{
+  "name": "Your App Full Name",
+  "short_name": "Your App",
+  "description": "Description of your app",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
+                </div>
+            </div>
+        </div>
+
+        <div class="meta-section">
+            <h2>Performance & Resource Hints</h2>
+            <p class="description">Modern performance optimization techniques for faster loading and better user experience.</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button><span class="tag-comment">&lt;!-- Performance & Resource Hints --&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"preconnect"</span> <span class="tag-attribute">href=</span><span class="tag-value">"https://fonts.googleapis.com"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"preconnect"</span> <span class="tag-attribute">href=</span><span class="tag-value">"https://fonts.gstatic.com"</span> <span class="tag-attribute">crossorigin</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"dns-prefetch"</span> <span class="tag-attribute">href=</span><span class="tag-value">"//cdn.example.com"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"prefetch"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/next-page.html"</span><span class="tag-name">&gt;</span>
+<span class="tag-name">&lt;link</span> <span class="tag-attribute">rel=</span><span class="tag-value">"preload"</span> <span class="tag-attribute">href=</span><span class="tag-value">"/critical-font.woff2"</span> <span class="tag-attribute">as=</span><span class="tag-value">"font"</span> <span class="tag-attribute">type=</span><span class="tag-value">"font/woff2"</span> <span class="tag-attribute">crossorigin</span><span class="tag-name">&gt;</span>
+
+<span class="tag-comment">&lt;!-- Disable unwanted features --&gt;</span>
+<span class="tag-name">&lt;meta</span> <span class="tag-attribute">name=</span><span class="tag-value">"format-detection"</span> <span class="tag-attribute">content=</span><span class="tag-value">"telephone=no, date=no, email=no, address=no"</span><span class="tag-name">&gt;</span>
+            </div>
+        </div>
+
+        <div class="meta-section">
+            <h2>Schema.org Structured Data</h2>
+            <p class="description">JSON-LD structured data for better search engine understanding and rich snippets.</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button><span class="tag-comment">&lt;!-- Structured Data (JSON-LD) --&gt;</span>
+<span class="tag-name">&lt;script</span> <span class="tag-attribute">type=</span><span class="tag-value">"application/ld+json"</span><span class="tag-name">&gt;</span>
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Your Site Name",
+  "url": "https://example.com",
+  "
